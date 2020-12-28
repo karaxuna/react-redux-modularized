@@ -8,10 +8,10 @@ export const updateGlobalState = <TLocalState, TGlobalState>(globalState: TGloba
     return set(globalState, path, localState)
 }
 
-export const localReducer = <TLocalState, TGlobalState>(context, fn) => {
+export const localReducer = <TLocalState, TGlobalState>(path, fn) => {
     return (state: TGlobalState, action) => {
-        const currentLocalState = getLocalState<TLocalState, TGlobalState>(state, context.path)
+        const currentLocalState = getLocalState<TLocalState, TGlobalState>(state, path)
         const updatedLocalState = fn(currentLocalState, action)
-        return updateGlobalState(state, updatedLocalState, context.path)
+        return updateGlobalState(state, updatedLocalState, path)
     }
 }
