@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {
 	useReduxModularized
-} from './use-redux-modularized'
+} from './hook'
 
 export const withReduxModularized = () => {
 	return (Component) => {

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ReduxModularizedContext } from './redux-modularized-context'
+import { ReduxModularizedContext } from './context'
 
 export const ReduxModularizedProvider = ({ modules }) => {
     return (

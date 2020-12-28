@@ -1,6 +1,6 @@
 {
     "name": "react-redux-modularized",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "author": {
         "name": "Kakhaber Bazerashvili",
         "email": "kaxabernet@gmail.com",
@@ -17,5 +17,7 @@
         "@types/react": "^17.0.0",
         "typescript": "^3.2.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "object-path-immutable": "^4.1.1"
+    }
 }

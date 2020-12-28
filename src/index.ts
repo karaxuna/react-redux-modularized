@@ -1,3 +1,4 @@
-export * from './use-redux-modularized'
-export * from './with-redux-modularized'
-export * from './redux-modularized-provider'
+export * from './hook'
+export * from './hoc'
+export * from './provider'
+export * from './utils'

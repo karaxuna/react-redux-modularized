@@ -3,7 +3,7 @@ import {
 } from 'react'
 import {
 	ReduxModularizedContext
-} from './redux-modularized-context'
+} from './context'
 
 export const useReduxModularized = () => {
 	return useContext(ReduxModularizedContext)
