@@ -7,3 +7,11 @@ export const getLocalState = <TLocalState, TGlobalState>(globalState: TGlobalSta
 export const updateGlobalState = <TLocalState, TGlobalState>(globalState: TGlobalState, localState: TLocalState, path: string[]) => {
     return set(globalState, path, localState)
 }
+
+export const localReducer = <TLocalState, TGlobalState>(context, fn) => {
+    return (state: TGlobalState, action) => {
+        const currentLocalState = getLocalState<TLocalState, TGlobalState>(state, context.path)
+        const updatedLocalState = fn(currentLocalState, action)
+        return updateGlobalState(state, updatedLocalState, context.path)
+    }
+}
