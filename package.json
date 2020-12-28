@@ -1,0 +1,21 @@
+{
+    "name": "react-redux-modularized",
+    "version": "0.0.1",
+    "author": {
+        "name": "Kakhaber Bazerashvili",
+        "email": "kaxabernet@gmail.com",
+        "url": "https://github.com/karaxuna"
+    },
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "scripts": {
+        "watch": "tsc --watch",
+        "build": "tsc",
+        "prepublish": "npm run build"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.0",
+        "typescript": "^3.2.2"
+    },
+    "dependencies": {}
+}
